@@ -3,10 +3,10 @@ import { useSelector } from 'react-redux'
 
 const App = () => {
   // const [message, setMessage] = useState({ greeting: 'Hello world from hooked state using an object' })
-  const message = 
+  const message = useSelector(state => state.message)
   return (
     <>
-      <h1>{message}</h1>
+      <h1>{message.greeting}</h1>
     </>
   )
 }
