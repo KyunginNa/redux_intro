@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const App = () => {
-  const [message, setMessage] = useState({ greeting: 'Hello world from hooked state' })
+  const [message, setMessage] = useState({ greeting: 'Hello world from hooked state using an object' })
   return (
     <>
       <h1>{message}</h1>
