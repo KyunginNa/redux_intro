@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const App = () => {
+  const [message, setMessage] = useState({ greeting: 'Hello world from hooked state' })
   return (
-    <div>
-      
-    </div>
+    <>
+      <h1>{message}</h1>
+    </>
   )
 }
 
