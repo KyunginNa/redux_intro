@@ -1,12 +1,14 @@
 import React from 'react'
 import DisplayGreeting from "./components/DisplayGreeting";
 import GreetingInput from "./components/GreetingInput";
+import DisplayUsers from "./components/DisplayUsers";
 
 const App = () => {
   return (
     <>
-      <DisplayGreeting />
-      <GreetingInput />
+      <DisplayUsers />
+      {/* <DisplayGreeting />
+      <GreetingInput /> */}
     </>
   )
 }
