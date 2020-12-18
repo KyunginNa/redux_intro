@@ -1,13 +1,12 @@
 import React from 'react'
-import { useSelector } from "react-redux";
+import DisplayGreeting from "./components/DisplayGreeting";
+import GreetingInput from "./components/GreetingInput";
 
 const App = () => {
-  // const [message, setMessage] = useState({ greeting: 'Hello world from hooked state using an object' })
-  // let message = 'Hello World from variable'
-  const message = useSelector(state => state.message)
   return (
     <>
-      <h1>{message.greeting}</h1>
+      <DisplayGreeting />
+      <GreetingInput />
     </>
   )
 }
